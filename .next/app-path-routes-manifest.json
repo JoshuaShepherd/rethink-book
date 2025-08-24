@@ -1,0 +1,11 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/page": "/",
+  "/principles/[slug]/quiz/page": "/principles/[slug]/quiz",
+  "/principles/[slug]/page": "/principles/[slug]",
+  "/principles/page": "/principles",
+  "/admin/principles/[id]/edit/page": "/admin/principles/[id]/edit",
+  "/admin/page": "/admin",
+  "/admin/principles/new/page": "/admin/principles/new",
+  "/admin/principles/page": "/admin/principles"
+}

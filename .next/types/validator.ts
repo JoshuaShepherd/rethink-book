@@ -36,10 +36,52 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
 }
 
 
+// Validate ../../src/app/admin/page.tsx
+{
+  const handler = {} as typeof import("../../src/app/admin/page.js")
+  handler satisfies AppPageConfig<"/admin">
+}
+
+// Validate ../../src/app/admin/principles/[id]/edit/page.tsx
+{
+  const handler = {} as typeof import("../../src/app/admin/principles/[id]/edit/page.js")
+  handler satisfies AppPageConfig<"/admin/principles/[id]/edit">
+}
+
+// Validate ../../src/app/admin/principles/new/page.tsx
+{
+  const handler = {} as typeof import("../../src/app/admin/principles/new/page.js")
+  handler satisfies AppPageConfig<"/admin/principles/new">
+}
+
+// Validate ../../src/app/admin/principles/page.tsx
+{
+  const handler = {} as typeof import("../../src/app/admin/principles/page.js")
+  handler satisfies AppPageConfig<"/admin/principles">
+}
+
 // Validate ../../src/app/page.tsx
 {
   const handler = {} as typeof import("../../src/app/page.js")
   handler satisfies AppPageConfig<"/">
+}
+
+// Validate ../../src/app/principles/[slug]/page.tsx
+{
+  const handler = {} as typeof import("../../src/app/principles/[slug]/page.js")
+  handler satisfies AppPageConfig<"/principles/[slug]">
+}
+
+// Validate ../../src/app/principles/[slug]/quiz/page.tsx
+{
+  const handler = {} as typeof import("../../src/app/principles/[slug]/quiz/page.js")
+  handler satisfies AppPageConfig<"/principles/[slug]/quiz">
+}
+
+// Validate ../../src/app/principles/page.tsx
+{
+  const handler = {} as typeof import("../../src/app/principles/page.js")
+  handler satisfies AppPageConfig<"/principles">
 }
 
 
@@ -47,6 +89,12 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
 
 
 
+
+// Validate ../../src/app/admin/layout.tsx
+{
+  const handler = {} as typeof import("../../src/app/admin/layout.js")
+  handler satisfies LayoutConfig<"/admin">
+}
 
 // Validate ../../src/app/layout.tsx
 {

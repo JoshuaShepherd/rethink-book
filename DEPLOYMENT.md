@@ -28,7 +28,7 @@ Currently no environment variables are required for basic deployment.
 1. Go to [netlify.com](https://netlify.com) and sign up/login
 2. Drag and drop your project folder OR connect GitHub repo
 3. Build settings:
-   - Build command: `npm run build`  
+   - Build command: `npm run build`
    - Publish directory: `out` (if using static export) or `.next` (for server-side)
 
 ## 🔧 Production Checklist
@@ -43,6 +43,7 @@ Currently no environment variables are required for basic deployment.
 - [x] All routes functional
 
 ## 🎯 Current Build Status
+
 ```
 ✓ Compiled successfully
 ✓ 8 static pages generated
