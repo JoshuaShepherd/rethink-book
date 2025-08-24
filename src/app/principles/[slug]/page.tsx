@@ -67,14 +67,10 @@ export default function ModulePlayerPage({ params }: ModulePlayerPageProps) {
     getActivitiesByLessonId(lesson.id)
   );
 
-  // Initialize with first lesson
+  // Initialize without auto-selecting first lesson
   useEffect(() => {
-    if (lessons.length > 0 && !currentLessonId) {
-      setCurrentLessonId(lessons[0].id);
-      analytics.trackLessonView(slug, lessons[0].id);
-    }
     setIsLoading(false);
-  }, [lessons, currentLessonId, slug]);
+  }, []);
 
   const handleLessonSelect = useCallback(
     (lessonId: string) => {
@@ -421,9 +417,23 @@ export default function ModulePlayerPage({ params }: ModulePlayerPageProps) {
                 </Card>
               </div>
             ) : (
+              /* Principle Overview Content */
               <Card>
                 <CardContent className="pt-6">
-                  <p>No lesson selected</p>
+                  {hasContent && mdxContent ? (
+                    <MarkdownContent content={mdxContent} />
+                  ) : (
+                    <div className="prose prose-lg max-w-none dark:prose-invert">
+                      <h1>{finalPrinciple.title}</h1>
+                      <p className="text-lg text-muted-foreground mb-6">
+                        {finalPrinciple.summary}
+                      </p>
+                      <p>
+                        Select a lesson from the sidebar to begin your learning journey, 
+                        or explore the interactive activities and quizzes available for this principle.
+                      </p>
+                    </div>
+                  )}
                 </CardContent>
               </Card>
             )}
