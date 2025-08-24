@@ -12,19 +12,21 @@
       "static/chunks/4bd1b696-c023c6e3521b1417.js",
       "static/chunks/255-01c481785f268126.js",
       "static/chunks/main-app-7f0032b8654c6926.js",
-      "static/css/d09fffbbe2da87e9.css",
+      "static/css/ad5eee1e54264918.css",
       "static/chunks/663-b446c642bdd9c68c.js",
       "static/chunks/app/layout-2e8e77b1eeb04837.js"
     ],
-    "/page": [
+    "/principles/[slug]/page": [
       "static/chunks/webpack-e5def2c87e9a9b76.js",
       "static/chunks/4bd1b696-c023c6e3521b1417.js",
       "static/chunks/255-01c481785f268126.js",
       "static/chunks/main-app-7f0032b8654c6926.js",
       "static/chunks/999-70a97b98f73705cc.js",
       "static/chunks/619-ba102abea3e3d0e4.js",
-      "static/chunks/927-29dd6196ea412554.js",
-      "static/chunks/app/page-546caa0f99631aa7.js"
+      "static/chunks/663-b446c642bdd9c68c.js",
+      "static/chunks/88-14336c3ed502f5f3.js",
+      "static/chunks/57-79c187e506427e87.js",
+      "static/chunks/app/principles/[slug]/page-14c315762b189598.js"
     ],
     "/principles/[slug]/quiz/page": [
       "static/chunks/webpack-e5def2c87e9a9b76.js",
@@ -36,17 +38,15 @@
       "static/chunks/0-b4c3ba2f57e55198.js",
       "static/chunks/app/principles/[slug]/quiz/page-f05cf3efdd077725.js"
     ],
-    "/principles/[slug]/page": [
+    "/page": [
       "static/chunks/webpack-e5def2c87e9a9b76.js",
       "static/chunks/4bd1b696-c023c6e3521b1417.js",
       "static/chunks/255-01c481785f268126.js",
       "static/chunks/main-app-7f0032b8654c6926.js",
       "static/chunks/999-70a97b98f73705cc.js",
       "static/chunks/619-ba102abea3e3d0e4.js",
-      "static/chunks/663-b446c642bdd9c68c.js",
-      "static/chunks/88-eb1ad5a17e7c0441.js",
-      "static/chunks/572-3667c3de9e16e0f2.js",
-      "static/chunks/app/principles/[slug]/page-2bc75c2c65967940.js"
+      "static/chunks/927-f5ebde1d4c9aafba.js",
+      "static/chunks/app/page-2c4c86498be5f692.js"
     ],
     "/principles/page": [
       "static/chunks/webpack-e5def2c87e9a9b76.js",
@@ -63,21 +63,16 @@
       "static/chunks/main-app-7f0032b8654c6926.js",
       "static/chunks/app/admin/layout-f0f5051b9595e4b5.js"
     ],
-    "/admin/principles/[id]/edit/page": [
-      "static/chunks/webpack-e5def2c87e9a9b76.js",
-      "static/chunks/4bd1b696-c023c6e3521b1417.js",
-      "static/chunks/255-01c481785f268126.js",
-      "static/chunks/main-app-7f0032b8654c6926.js",
-      "static/chunks/app/admin/principles/[id]/edit/page-d15defada4b1a3d3.js"
-    ],
-    "/admin/page": [
+    "/admin/principles/page": [
       "static/chunks/webpack-e5def2c87e9a9b76.js",
       "static/chunks/4bd1b696-c023c6e3521b1417.js",
       "static/chunks/255-01c481785f268126.js",
       "static/chunks/main-app-7f0032b8654c6926.js",
       "static/chunks/999-70a97b98f73705cc.js",
       "static/chunks/619-ba102abea3e3d0e4.js",
-      "static/chunks/app/admin/page-e8a74ae0f2fa944b.js"
+      "static/chunks/88-14336c3ed502f5f3.js",
+      "static/chunks/161-9a1e50193246dcff.js",
+      "static/chunks/app/admin/principles/page-c6cea93951d05585.js"
     ],
     "/admin/principles/new/page": [
       "static/chunks/webpack-e5def2c87e9a9b76.js",
@@ -86,18 +81,23 @@
       "static/chunks/main-app-7f0032b8654c6926.js",
       "static/chunks/999-70a97b98f73705cc.js",
       "static/chunks/619-ba102abea3e3d0e4.js",
-      "static/chunks/app/admin/principles/new/page-3596d701f957e0ca.js"
+      "static/chunks/app/admin/principles/new/page-5fa284daf12a4911.js"
     ],
-    "/admin/principles/page": [
+    "/admin/page": [
       "static/chunks/webpack-e5def2c87e9a9b76.js",
       "static/chunks/4bd1b696-c023c6e3521b1417.js",
       "static/chunks/255-01c481785f268126.js",
       "static/chunks/main-app-7f0032b8654c6926.js",
       "static/chunks/999-70a97b98f73705cc.js",
       "static/chunks/619-ba102abea3e3d0e4.js",
-      "static/chunks/88-eb1ad5a17e7c0441.js",
-      "static/chunks/161-9a1e50193246dcff.js",
-      "static/chunks/app/admin/principles/page-602085e3dc280514.js"
+      "static/chunks/app/admin/page-bc13b13af2a6db09.js"
+    ],
+    "/admin/principles/[id]/edit/page": [
+      "static/chunks/webpack-e5def2c87e9a9b76.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-01c481785f268126.js",
+      "static/chunks/main-app-7f0032b8654c6926.js",
+      "static/chunks/app/admin/principles/[id]/edit/page-d15defada4b1a3d3.js"
     ]
   }
 }
