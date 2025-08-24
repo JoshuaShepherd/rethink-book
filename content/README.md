@@ -62,6 +62,7 @@ npm run convert:pdf
 ```
 
 Notes:
+
 - The converter never deletes or overwrites existing files.
 - If a folder already has `overview.mdx`, the converter writes `ebook.mdx`.
 - If multiple sections resolve to the same slug, the converter will create `ebook-2.mdx`, `ebook-3.mdx`, etc.

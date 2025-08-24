@@ -35,7 +35,8 @@ function ensureDir(dir) {
 
 function writeMDX(dir, filename, { title, order, body }) {
   ensureDir(dir);
-  const fm = `---\n` +
+  const fm =
+    `---\n` +
     `title: "${title.replace(/"/g, '\\"')}"\n` +
     (typeof order === 'number' ? `order: ${order}\n` : '') +
     `---\n\n`;
@@ -47,13 +48,16 @@ function splitPrinciples(fullText) {
   // Normalize line endings
   const text = fullText.replace(/\r\n?/g, '\n');
   // Look for headings like "Principle 1:", "PRINCIPLE 1:", "Principle One:" etc.
-  const headingRegex = /^\s*(?:PRINCIPLE|Principle)\s+(\d+|One|Two|Three|Four|Five|Six|Seven|Eight|Nine|Ten|Eleven|Twelve)\s*[:\-]\s*(.+)$/mi;
+  const headingRegex =
+    /^\s*(?:PRINCIPLE|Principle)\s+(\d+|One|Two|Three|Four|Five|Six|Seven|Eight|Nine|Ten|Eleven|Twelve)\s*[:\-]\s*(.+)$/im;
 
   // Find all positions of headings
   const lines = text.split('\n');
   const idxs = [];
   for (let i = 0; i < lines.length; i++) {
-    const m = lines[i].match(/^\s*(?:PRINCIPLE|Principle)\s+(\d+|One|Two|Three|Four|Five|Six|Seven|Eight|Nine|Ten|Eleven|Twelve)\s*[:\-]\s*(.+)$/);
+    const m = lines[i].match(
+      /^\s*(?:PRINCIPLE|Principle)\s+(\d+|One|Two|Three|Four|Five|Six|Seven|Eight|Nine|Ten|Eleven|Twelve)\s*[:\-]\s*(.+)$/
+    );
     if (m) {
       idxs.push({ line: i, raw: lines[i], num: m[1], title: m[2].trim() });
     }
@@ -74,8 +78,18 @@ function splitPrinciples(fullText) {
 
     // Convert spelled-out numbers to digits for order
     const mapWord = {
-      one: 1, two: 2, three: 3, four: 4, five: 5, six: 6,
-      seven: 7, eight: 8, nine: 9, ten: 10, eleven: 11, twelve: 12,
+      one: 1,
+      two: 2,
+      three: 3,
+      four: 4,
+      five: 5,
+      six: 6,
+      seven: 7,
+      eight: 8,
+      nine: 9,
+      ten: 10,
+      eleven: 11,
+      twelve: 12,
     };
     let order = parseInt(idxs[s].num, 10);
     if (Number.isNaN(order)) {
@@ -116,14 +130,18 @@ async function main() {
     } else {
       ensureDir(baseDir);
       writeMDX(baseDir, 'overview.mdx', sections[0]);
-      console.log(`Wrote ${path.relative(ROOT, path.join(baseDir, 'overview.mdx'))}`);
+      console.log(
+        `Wrote ${path.relative(ROOT, path.join(baseDir, 'overview.mdx'))}`
+      );
     }
     return;
   }
 
   const slugCounts = {};
   for (const sec of sections) {
-    const principleTitle = sec.title.replace(/^Principle\s+\d+\s*:\s*/i, '').trim();
+    const principleTitle = sec.title
+      .replace(/^Principle\s+\d+\s*:\s*/i, '')
+      .trim();
     let slug = slugify(principleTitle);
     if (!slug) {
       // Fallback to principle number
@@ -132,7 +150,7 @@ async function main() {
     const dir = path.join(OUT_ROOT, slug);
     ensureDir(dir);
 
-    const count = (slugCounts[slug] || 0);
+    const count = slugCounts[slug] || 0;
     slugCounts[slug] = count + 1;
 
     const hasOverview = fs.existsSync(path.join(dir, 'overview.mdx'));
@@ -144,7 +162,7 @@ async function main() {
   }
 }
 
-main().catch((err) => {
+main().catch(err => {
   console.error(err);
   process.exit(1);
 });

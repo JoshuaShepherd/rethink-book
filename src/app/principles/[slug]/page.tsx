@@ -19,18 +19,19 @@ import { toast } from 'react-hot-toast';
 // Components
 import { LessonNav } from '@/components/module/lesson-nav';
 import { VideoPlayer } from '@/components/module/video-player';
-import { MDXRenderer } from '@/components/mdx/mdx-renderer';
+import { MDXContent, MarkdownContent } from '@/components/mdx/mdx-content';
 import { ReflectionPrompt } from '@/components/module/reflection-prompt';
 import { SimulationChoice } from '@/components/module/simulation-choice';
 import { FieldExperimentCard } from '@/components/module/field-experiment-card';
 import { ProgressSummary } from '@/components/module/progress-summary';
 
-// Mock data
+// Content loading - fallback to mocks if no MDX content
 import {
   getPrincipleBySlug,
   getLessonsByPrincipleId,
   getActivitiesByLessonId,
 } from '@/lib/mocks/content';
+import { hasContentForSlug, getContentForSlug } from '@/lib/principle-content';
 import { analytics } from '@/lib/analytics';
 import { Activity, Lesson } from '@/types/content';
 
@@ -52,12 +53,16 @@ export default function ModulePlayerPage({ params }: ModulePlayerPageProps) {
   const [isLoading, setIsLoading] = useState(true);
 
   const principle = getPrincipleBySlug(slug);
-
+  const hasContent = hasContentForSlug(slug);
+  const mdxContent = getContentForSlug(slug);
+  
   if (!principle) {
     notFound();
   }
 
-  const lessons = getLessonsByPrincipleId(principle.id);
+  const finalPrinciple = principle;
+
+  const lessons = getLessonsByPrincipleId(finalPrinciple.id);
   const allActivities = lessons.flatMap(lesson =>
     getActivitiesByLessonId(lesson.id)
   );
@@ -217,7 +222,7 @@ export default function ModulePlayerPage({ params }: ModulePlayerPageProps) {
               <div className="hidden sm:block h-6 border-l" />
 
               <h1 className="font-semibold text-foreground truncate">
-                {principle.title}
+                {finalPrinciple.title}
               </h1>
             </div>
 
@@ -396,7 +401,9 @@ export default function ModulePlayerPage({ params }: ModulePlayerPageProps) {
                 {/* MDX Content */}
                 <Card>
                   <CardContent className="pt-6">
-                    <MDXRenderer>
+                    {hasContent && mdxContent ? (
+                      <MarkdownContent content={mdxContent} />
+                    ) : (
                       <div className="prose prose-lg max-w-none dark:prose-invert">
                         {/* In a real implementation, this would render the actual MDX */}
                         <h1>{currentLesson.title}</h1>
@@ -409,7 +416,7 @@ export default function ModulePlayerPage({ params }: ModulePlayerPageProps) {
                           needs additional setup for dynamic imports.
                         </p>
                       </div>
-                    </MDXRenderer>
+                    )}
                   </CardContent>
                 </Card>
               </div>
@@ -427,7 +434,7 @@ export default function ModulePlayerPage({ params }: ModulePlayerPageProps) {
             <div className="sticky top-24 space-y-6">
               {/* Progress Summary */}
               <ProgressSummary
-                principleTitle={principle.title}
+                principleTitle={finalPrinciple.title}
                 lessons={lessons}
                 activities={allActivities}
                 currentLessonId={currentLessonId || undefined}

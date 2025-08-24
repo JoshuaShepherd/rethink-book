@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run build:content && next build",
+    "build:content": "node scripts/build-content.js",
     "start": "next start",
     "lint": "next lint --fix",
     "lint:check": "next lint",
