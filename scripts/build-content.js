@@ -10,11 +10,17 @@ const path = require('path');
 const matter = require('gray-matter');
 
 const CONTENT_ROOT = path.join(__dirname, '..', 'content', 'principles');
-const OUTPUT_FILE = path.join(__dirname, '..', 'src', 'lib', 'principle-content.ts');
+const OUTPUT_FILE = path.join(
+  __dirname,
+  '..',
+  'src',
+  'lib',
+  'principle-content.ts'
+);
 
 function readMDXContent(principleSlug) {
   const principleDir = path.join(CONTENT_ROOT, principleSlug);
-  
+
   if (!fs.existsSync(principleDir)) {
     return null;
   }
@@ -22,14 +28,14 @@ function readMDXContent(principleSlug) {
   // Look for overview.mdx first, then ebook.mdx
   const overviewPath = path.join(principleDir, 'overview.mdx');
   const ebookPath = path.join(principleDir, 'ebook.mdx');
-  
+
   let contentPath = null;
   if (fs.existsSync(overviewPath)) {
     contentPath = overviewPath;
   } else if (fs.existsSync(ebookPath)) {
     contentPath = ebookPath;
   }
-  
+
   if (!contentPath) {
     return null;
   }
@@ -37,11 +43,11 @@ function readMDXContent(principleSlug) {
   try {
     const fileContents = fs.readFileSync(contentPath, 'utf8');
     const { data, content } = matter(fileContents);
-    
+
     return {
       title: data.title || slugToTitle(principleSlug),
       content: content.trim(),
-      hasContent: content.trim().length > 0
+      hasContent: content.trim().length > 0,
     };
   } catch (error) {
     console.warn(`Failed to read ${contentPath}:`, error.message);
@@ -69,7 +75,8 @@ function generateContentFile() {
     process.exit(1);
   }
 
-  const principles = fs.readdirSync(CONTENT_ROOT, { withFileTypes: true })
+  const principles = fs
+    .readdirSync(CONTENT_ROOT, { withFileTypes: true })
     .filter(dirent => dirent.isDirectory())
     .map(dirent => dirent.name)
     .sort();
@@ -78,11 +85,11 @@ function generateContentFile() {
 
   for (const slug of principles) {
     const mdxData = readMDXContent(slug);
-    
+
     if (mdxData && mdxData.hasContent) {
       contentEntries.push({
         slug,
-        ...mdxData
+        ...mdxData,
       });
     }
   }
@@ -123,8 +130,10 @@ export function getTitleForSlug(slug: string): string | null {
 
   // Write the output file
   fs.writeFileSync(OUTPUT_FILE, output, 'utf8');
-  console.log(`Generated ${OUTPUT_FILE} with ${contentEntries.length} principle(s)`);
-  
+  console.log(
+    `Generated ${OUTPUT_FILE} with ${contentEntries.length} principle(s)`
+  );
+
   // List the principles found
   if (contentEntries.length > 0) {
     console.log('Principles with content:');

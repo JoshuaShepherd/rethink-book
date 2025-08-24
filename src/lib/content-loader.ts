@@ -9,13 +9,13 @@ const isServer = typeof window === 'undefined';
 // Fallback badges mapping for generated principles
 const defaultBadges = {
   'missionary-nature-of-god': 'badge_missio_dei',
-  'the-missionary-nature-of-god': 'badge_missio_dei', 
+  'the-missionary-nature-of-god': 'badge_missio_dei',
   'missio-dei': 'badge_missio_dei',
   'incarnational-mission': 'badge_incarnation',
-  'vocation': 'badge_vocation',
-  'multiplication': 'badge_multiplication',
-  'teams': 'badge_teams',
-  'place': 'badge_place',
+  vocation: 'badge_vocation',
+  multiplication: 'badge_multiplication',
+  teams: 'badge_teams',
+  place: 'badge_place',
   'post-christendom': 'badge_post_christendom',
 } as const;
 
@@ -44,12 +44,13 @@ export interface LessonMDX {
  */
 export function getPrincipleSlugs(): string[] {
   if (!isServer) return [];
-  
+
   if (!fs.existsSync(CONTENT_ROOT)) {
     return [];
   }
-  
-  return fs.readdirSync(CONTENT_ROOT, { withFileTypes: true })
+
+  return fs
+    .readdirSync(CONTENT_ROOT, { withFileTypes: true })
     .filter((dirent: fs.Dirent) => dirent.isDirectory())
     .map((dirent: fs.Dirent) => dirent.name)
     .sort();
@@ -60,19 +61,19 @@ export function getPrincipleSlugs(): string[] {
  */
 export function loadPrincipleMDX(slug: string): PrincipleMDX | null {
   if (!isServer) return null;
-  
+
   const principleDir = path.join(CONTENT_ROOT, slug);
-  
+
   if (!fs.existsSync(principleDir)) {
     return null;
   }
 
   const overviewPath = path.join(principleDir, 'overview.mdx');
   const ebookPath = path.join(principleDir, 'ebook.mdx');
-  
+
   const hasOverview = fs.existsSync(overviewPath);
   const hasEbook = fs.existsSync(ebookPath);
-  
+
   if (!hasOverview && !hasEbook) {
     return null;
   }
@@ -81,7 +82,7 @@ export function loadPrincipleMDX(slug: string): PrincipleMDX | null {
   const contentPath = hasOverview ? overviewPath : ebookPath;
   const fileContents = fs.readFileSync(contentPath, 'utf8');
   const { data, content } = matter(fileContents);
-  
+
   // Extract title from frontmatter or derive from slug
   const title = data.title || slugToTitle(slug);
   const summary = data.summary || generateSummary(content);
@@ -94,7 +95,7 @@ export function loadPrincipleMDX(slug: string): PrincipleMDX | null {
     order,
     content,
     hasOverview,
-    hasEbook
+    hasEbook,
   };
 }
 
@@ -103,22 +104,22 @@ export function loadPrincipleMDX(slug: string): PrincipleMDX | null {
  */
 export function loadPrincipleLessons(principleSlug: string): LessonMDX[] {
   if (!isServer) return [];
-  
+
   const principleDir = path.join(CONTENT_ROOT, principleSlug);
-  
+
   if (!fs.existsSync(principleDir)) {
     return [];
   }
 
   const lessons: LessonMDX[] = [];
   const files = fs.readdirSync(principleDir);
-  
+
   for (const file of files) {
     if (file.startsWith('lesson-') && file.endsWith('.mdx')) {
       const lessonPath = path.join(principleDir, file);
       const fileContents = fs.readFileSync(lessonPath, 'utf8');
       const { data, content } = matter(fileContents);
-      
+
       const lessonSlug = file.replace('.mdx', '');
       const title = data.title || slugToTitle(lessonSlug);
       const order = data.order || extractLessonNumber(file);
@@ -128,7 +129,7 @@ export function loadPrincipleLessons(principleSlug: string): LessonMDX[] {
         title,
         order,
         content,
-        principleSlug
+        principleSlug,
       });
     }
   }
@@ -146,7 +147,7 @@ export function getAllPrinciples(): Principle[] {
   for (let i = 0; i < slugs.length; i++) {
     const slug = slugs[i];
     const mdx = loadPrincipleMDX(slug);
-    
+
     if (mdx) {
       // Map to Principle interface
       const principle: Principle = {
@@ -155,9 +156,11 @@ export function getAllPrinciples(): Principle[] {
         title: mdx.title,
         summary: mdx.summary || '',
         estMinutes: 45, // Default estimate
-        badgeId: (defaultBadges as any)[mdx.slug] || `badge_${slug.replace(/-/g, '_')}`
+        badgeId:
+          (defaultBadges as any)[mdx.slug] ||
+          `badge_${slug.replace(/-/g, '_')}`,
       };
-      
+
       principles.push(principle);
     }
   }
@@ -172,20 +175,22 @@ export function getAllPrinciples(): Principle[] {
 /**
  * Get principle by slug with MDX content
  */
-export function getPrincipleBySlugWithContent(slug: string): (Principle & { content?: string }) | null {
+export function getPrincipleBySlugWithContent(
+  slug: string
+): (Principle & { content?: string }) | null {
   const mdx = loadPrincipleMDX(slug);
   if (!mdx) return null;
 
   const principles = getAllPrinciples();
   const principle = principles.find(p => p.slug === slug);
-  
+
   if (principle) {
     return {
       ...principle,
-      content: mdx.content
+      content: mdx.content,
     };
   }
-  
+
   return null;
 }
 
@@ -195,11 +200,11 @@ export function getPrincipleBySlugWithContent(slug: string): (Principle & { cont
 export function getLessonsByPrincipleSlug(principleSlug: string): Lesson[] {
   const principles = getAllPrinciples();
   const principle = principles.find(p => p.slug === principleSlug);
-  
+
   if (!principle) return [];
 
   const lessonMDXs = loadPrincipleLessons(principleSlug);
-  
+
   return lessonMDXs.map((lessonMDX, index) => {
     const lesson: Lesson = {
       id: `${principle.id}-lesson-${index + 1}`,
@@ -207,9 +212,9 @@ export function getLessonsByPrincipleSlug(principleSlug: string): Lesson[] {
       title: lessonMDX.title,
       order: lessonMDX.order || index + 1,
       mdxPath: `/content/principles/${principleSlug}/${lessonMDX.slug}.mdx`,
-      keyTakeaways: extractKeyTakeaways(lessonMDX.content)
+      keyTakeaways: extractKeyTakeaways(lessonMDX.content),
     };
-    
+
     return lesson;
   });
 }
@@ -225,16 +230,17 @@ function slugToTitle(slug: string): string {
 function generateSummary(content: string): string {
   // Extract first paragraph or sentence as summary
   const lines = content.split('\n').filter(line => line.trim());
-  const firstParagraph = lines.find(line => 
-    !line.startsWith('#') && 
-    !line.startsWith('---') && 
-    line.trim().length > 20
+  const firstParagraph = lines.find(
+    line =>
+      !line.startsWith('#') &&
+      !line.startsWith('---') &&
+      line.trim().length > 20
   );
-  
+
   if (firstParagraph && firstParagraph.length > 100) {
     return firstParagraph.substring(0, 150).trim() + '...';
   }
-  
+
   return firstParagraph || 'Explore this principle in depth.';
 }
 
@@ -252,7 +258,7 @@ function extractKeyTakeaways(content: string): string[] {
   // Look for bullet points, numbered lists, or key points
   const takeaways: string[] = [];
   const lines = content.split('\n');
-  
+
   for (const line of lines) {
     const trimmed = line.trim();
     // Match bullet points or key statements
@@ -265,13 +271,13 @@ function extractKeyTakeaways(content: string): string[] {
         .replace(/^[-*]\s*\*\*(.*?)\*\*.*?/, '$1')
         .replace(/^\d+\.\s*\*\*(.*?)\*\*.*?/, '$1')
         .trim();
-      
+
       if (takeaway && takeaway.length > 10) {
         takeaways.push(takeaway);
       }
     }
   }
-  
+
   // If no structured takeaways found, extract from headings
   if (takeaways.length === 0) {
     for (const line of lines) {
@@ -283,6 +289,6 @@ function extractKeyTakeaways(content: string): string[] {
       }
     }
   }
-  
+
   return takeaways.slice(0, 4); // Limit to 4 key takeaways
 }

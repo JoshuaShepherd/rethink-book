@@ -12,7 +12,7 @@ const components = {
   h1: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h1
       className={cn(
-        "text-3xl font-bold tracking-tight text-foreground mb-6",
+        'text-3xl font-bold tracking-tight text-foreground mb-6',
         className
       )}
       {...props}
@@ -21,7 +21,7 @@ const components = {
   h2: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h2
       className={cn(
-        "text-2xl font-semibold text-foreground mb-4 mt-8",
+        'text-2xl font-semibold text-foreground mb-4 mt-8',
         className
       )}
       {...props}
@@ -30,7 +30,7 @@ const components = {
   h3: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h3
       className={cn(
-        "text-xl font-semibold text-foreground mb-3 mt-6",
+        'text-xl font-semibold text-foreground mb-3 mt-6',
         className
       )}
       {...props}
@@ -38,30 +38,21 @@ const components = {
   ),
   h4: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h4
-      className={cn(
-        "text-lg font-medium text-foreground mb-2 mt-4",
-        className
-      )}
+      className={cn('text-lg font-medium text-foreground mb-2 mt-4', className)}
       {...props}
     />
   ),
-  
+
   // Paragraphs
   p: ({ className, ...props }: React.HTMLAttributes<HTMLParagraphElement>) => (
-    <p
-      className={cn(
-        "text-foreground leading-7 mb-4",
-        className
-      )}
-      {...props}
-    />
+    <p className={cn('text-foreground leading-7 mb-4', className)} {...props} />
   ),
-  
+
   // Lists
   ul: ({ className, ...props }: React.HTMLAttributes<HTMLUListElement>) => (
     <ul
       className={cn(
-        "list-disc list-inside text-foreground mb-4 space-y-2",
+        'list-disc list-inside text-foreground mb-4 space-y-2',
         className
       )}
       {...props}
@@ -70,91 +61,75 @@ const components = {
   ol: ({ className, ...props }: React.HTMLAttributes<HTMLOListElement>) => (
     <ol
       className={cn(
-        "list-decimal list-inside text-foreground mb-4 space-y-2",
+        'list-decimal list-inside text-foreground mb-4 space-y-2',
         className
       )}
       {...props}
     />
   ),
   li: ({ className, ...props }: React.HTMLAttributes<HTMLLIElement>) => (
-    <li
-      className={cn(
-        "text-foreground leading-6",
-        className
-      )}
-      {...props}
-    />
+    <li className={cn('text-foreground leading-6', className)} {...props} />
   ),
-  
+
   // Links
   a: ({ className, ...props }: React.HTMLAttributes<HTMLAnchorElement>) => (
     <a
       className={cn(
-        "text-primary hover:text-primary/80 underline underline-offset-4",
+        'text-primary hover:text-primary/80 underline underline-offset-4',
         className
       )}
       {...props}
     />
   ),
-  
+
   // Emphasis
   strong: ({ className, ...props }: React.HTMLAttributes<HTMLElement>) => (
     <strong
-      className={cn(
-        "font-semibold text-foreground",
-        className
-      )}
+      className={cn('font-semibold text-foreground', className)}
       {...props}
     />
   ),
-  
+
   em: ({ className, ...props }: React.HTMLAttributes<HTMLElement>) => (
-    <em
-      className={cn(
-        "italic text-foreground",
-        className
-      )}
-      {...props}
-    />
+    <em className={cn('italic text-foreground', className)} {...props} />
   ),
-  
+
   // Code
   code: ({ className, ...props }: React.HTMLAttributes<HTMLElement>) => (
     <code
       className={cn(
-        "bg-muted px-2 py-1 rounded-md text-sm font-mono text-foreground",
+        'bg-muted px-2 py-1 rounded-md text-sm font-mono text-foreground',
         className
       )}
       {...props}
     />
   ),
-  
+
   // Blockquotes
-  blockquote: ({ className, ...props }: React.HTMLAttributes<HTMLQuoteElement>) => (
+  blockquote: ({
+    className,
+    ...props
+  }: React.HTMLAttributes<HTMLQuoteElement>) => (
     <blockquote
       className={cn(
-        "border-l-4 border-primary pl-6 my-6 italic text-muted-foreground",
+        'border-l-4 border-primary pl-6 my-6 italic text-muted-foreground',
         className
       )}
       {...props}
     />
   ),
-  
+
   // Horizontal rule
   hr: ({ className, ...props }: React.HTMLAttributes<HTMLHRElement>) => (
-    <hr
-      className={cn(
-        "border-border my-8",
-        className
-      )}
-      {...props}
-    />
+    <hr className={cn('border-border my-8', className)} {...props} />
   ),
 };
 
 export function MDXContent({ content, className }: MDXContentProps) {
   return (
-    <div className={cn("prose prose-lg max-w-none dark:prose-invert", className)}>
+    <div
+      className={cn('prose prose-lg max-w-none dark:prose-invert', className)}
+    >
       <div dangerouslySetInnerHTML={{ __html: content }} />
     </div>
   );
@@ -183,8 +158,8 @@ export function MarkdownContent({ content, className }: MDXContentProps) {
     .replace(/<\/h([1-6])><\/p>/g, '</h$1>');
 
   return (
-    <div 
-      className={cn("prose prose-lg max-w-none dark:prose-invert", className)}
+    <div
+      className={cn('prose prose-lg max-w-none dark:prose-invert', className)}
       dangerouslySetInnerHTML={{ __html: htmlContent }}
     />
   );

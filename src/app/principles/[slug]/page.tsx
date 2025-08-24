@@ -55,7 +55,7 @@ export default function ModulePlayerPage({ params }: ModulePlayerPageProps) {
   const principle = getPrincipleBySlug(slug);
   const hasContent = hasContentForSlug(slug);
   const mdxContent = getContentForSlug(slug);
-  
+
   if (!principle) {
     notFound();
   }
