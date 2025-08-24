@@ -45,3 +45,23 @@ When ready to implement MDX support:
 ```bash
 npm install @next/mdx @mdx-js/loader gray-matter
 ```
+
+## Principles Content and PDF Conversion
+
+This project includes structured content for the 12 Rethink principles under `content/principles/<slug>/`.
+
+- `overview.mdx` — canonical overview for a principle
+- `ebook.mdx` — supplemental content auto-extracted from the Rethink PDF
+- `activities.json` — optional activity definitions
+- `quiz.json` — optional quiz definitions
+
+To (re)generate MDX from the PDF, place `Rethink 12 Principles ebook.pdf` in `docs/` (already present) and run:
+
+```bash
+npm run convert:pdf
+```
+
+Notes:
+- The converter never deletes or overwrites existing files.
+- If a folder already has `overview.mdx`, the converter writes `ebook.mdx`.
+- If multiple sections resolve to the same slug, the converter will create `ebook-2.mdx`, `ebook-3.mdx`, etc.
