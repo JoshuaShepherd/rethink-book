@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/components/layout/theme-provider';
+import { Toaster } from 'react-hot-toast';
 import '@/styles/globals.css';
 
 const inter = Inter({
@@ -35,6 +36,17 @@ export default function RootLayout({
       >
         <ThemeProvider>
           <div className="relative min-h-screen">{children}</div>
+          <Toaster
+            position="top-right"
+            toastOptions={{
+              duration: 3500,
+              style: {
+                background: 'hsl(var(--background))',
+                color: 'hsl(var(--foreground))',
+                border: '1px solid hsl(var(--border))',
+              },
+            }}
+          />
         </ThemeProvider>
       </body>
     </html>

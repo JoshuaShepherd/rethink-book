@@ -169,7 +169,7 @@ export function GlassNavigation() {
                   </motion.a>
                 ))}
 
-                <div className="pt-4 border-t border-border">
+                <div className="pt-4 border-t border-gray-300 dark:border-gray-700">
                   <div className="flex items-center justify-between mb-4">
                     <span className="text-sm text-text-secondary">Theme</span>
                     <ThemeToggle />

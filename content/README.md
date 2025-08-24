@@ -29,7 +29,7 @@ export async function getPostBySlug(slug: string) {
   const fullPath = join(process.cwd(), 'content/blog/posts', `${slug}.mdx`);
   const fileContents = readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
-  
+
   return {
     slug,
     frontmatter: data,

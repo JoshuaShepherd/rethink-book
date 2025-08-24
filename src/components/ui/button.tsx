@@ -16,7 +16,7 @@ const buttonVariants = cva(
         glass:
           'bg-surface-glass backdrop-blur-glass border border-glass-border hover:bg-surface-elevated/80 hover:border-glass-white/30 text-text-primary',
         outline:
-          'border border-border bg-background hover:bg-surface hover:text-text-primary',
+          'border border-gray-300 dark:border-gray-700 bg-background hover:bg-surface hover:text-text-primary',
         ghost: 'hover:bg-surface hover:text-text-primary',
         link: 'text-primary underline-offset-4 hover:underline',
       },

@@ -17,5 +17,6 @@ export const STYLE_CONSTANTS = {
 export const COMMON_CLASSES = {
   glassCard: 'backdrop-blur-xl bg-white/5 border border-white/10 rounded-xl',
   button: 'px-6 py-2 rounded-lg font-medium transition-all duration-300',
-  input: 'px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2',
+  input:
+    'px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2',
 } as const;

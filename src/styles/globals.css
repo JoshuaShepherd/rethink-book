@@ -40,10 +40,6 @@
     --glow-emerald: 158 64% 52% / 0.2;
   }
 
-  * {
-    @apply border-border;
-  }
-
   body {
     @apply bg-background text-text-primary font-inter;
     font-feature-settings:
@@ -157,4 +153,12 @@
 
 .gradient-shift {
   animation: gradient-shift 20s linear infinite;
+}
+
+/* Keyboard key styles */
+kbd {
+  @apply inline-block px-1.5 py-0.5 text-xs font-mono bg-surface border border-gray-300 dark:border-gray-700 rounded;
+  font-family:
+    ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
 }
