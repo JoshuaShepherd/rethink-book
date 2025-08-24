@@ -19,7 +19,13 @@ import { toast } from 'react-hot-toast';
 // Components
 import { LessonNav } from '@/components/module/lesson-nav';
 import { VideoPlayer } from '@/components/module/video-player';
-import { MDXContent, MarkdownContent } from '@/components/mdx/mdx-content';
+import {
+  MDXContent,
+  MarkdownContent,
+  TableOfContents,
+} from '@/components/mdx/mdx-content';
+import { Callout, Scripture, Quote } from '@/components/mdx/components';
+import { ReadingProgress } from '@/components/mdx/reading-progress';
 import { ReflectionPrompt } from '@/components/module/reflection-prompt';
 import { SimulationChoice } from '@/components/module/simulation-choice';
 import { FieldExperimentCard } from '@/components/module/field-experiment-card';
@@ -202,6 +208,9 @@ export default function ModulePlayerPage({ params }: ModulePlayerPageProps) {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Reading Progress Bar */}
+      <ReadingProgress />
+
       {/* Header Bar - Sticky */}
       <header className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto px-6">
@@ -398,7 +407,19 @@ export default function ModulePlayerPage({ params }: ModulePlayerPageProps) {
                 <Card>
                   <CardContent className="pt-6">
                     {hasContent && mdxContent ? (
-                      <MarkdownContent content={mdxContent} />
+                      <div className="space-y-8">
+                        {/* Table of Contents */}
+                        <TableOfContents
+                          content={mdxContent}
+                          className="mb-8"
+                        />
+
+                        {/* Enhanced MDX Content */}
+                        <MarkdownContent
+                          content={mdxContent}
+                          className="ebook-content"
+                        />
+                      </div>
                     ) : (
                       <div className="prose prose-lg max-w-none dark:prose-invert">
                         {/* In a real implementation, this would render the actual MDX */}
@@ -421,7 +442,16 @@ export default function ModulePlayerPage({ params }: ModulePlayerPageProps) {
               <Card>
                 <CardContent className="pt-6">
                   {hasContent && mdxContent ? (
-                    <MarkdownContent content={mdxContent} />
+                    <div className="space-y-8">
+                      {/* Table of Contents for Principle Overview */}
+                      <TableOfContents content={mdxContent} className="mb-8" />
+
+                      {/* Enhanced Principle Content */}
+                      <MarkdownContent
+                        content={mdxContent}
+                        className="ebook-content"
+                      />
+                    </div>
                   ) : (
                     <div className="prose prose-lg max-w-none dark:prose-invert">
                       <h1>{finalPrinciple.title}</h1>
@@ -429,8 +459,9 @@ export default function ModulePlayerPage({ params }: ModulePlayerPageProps) {
                         {finalPrinciple.summary}
                       </p>
                       <p>
-                        Select a lesson from the sidebar to begin your learning journey, 
-                        or explore the interactive activities and quizzes available for this principle.
+                        Select a lesson from the sidebar to begin your learning
+                        journey, or explore the interactive activities and
+                        quizzes available for this principle.
                       </p>
                     </div>
                   )}

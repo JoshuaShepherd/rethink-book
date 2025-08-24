@@ -2480,13 +2480,6 @@ of the church, mission, and church planting.
   },
 };
 
-// Aliases for mock data slugs that don't match folder names
-principleContent['missionary-nature-of-god'] = principleContent['principle-1'];
-principleContent['discipleship'] = principleContent['principle-7']; 
-principleContent['contextualization'] = principleContent['principle-10'];
-principleContent['sending'] = principleContent['principle-11'];
-principleContent['metrics'] = principleContent['scorecards'];
-
 // Helper function to check if we have content for a slug
 export function hasContentForSlug(slug: string): boolean {
   return principleContent[slug]?.hasContent || false;

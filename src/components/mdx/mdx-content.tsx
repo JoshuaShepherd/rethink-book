@@ -6,125 +6,6 @@ interface MDXContentProps {
   className?: string;
 }
 
-// Custom components for MDX rendering
-const components = {
-  // Headings
-  h1: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
-    <h1
-      className={cn(
-        'text-3xl font-bold tracking-tight text-foreground mb-6',
-        className
-      )}
-      {...props}
-    />
-  ),
-  h2: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
-    <h2
-      className={cn(
-        'text-2xl font-semibold text-foreground mb-4 mt-8',
-        className
-      )}
-      {...props}
-    />
-  ),
-  h3: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
-    <h3
-      className={cn(
-        'text-xl font-semibold text-foreground mb-3 mt-6',
-        className
-      )}
-      {...props}
-    />
-  ),
-  h4: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
-    <h4
-      className={cn('text-lg font-medium text-foreground mb-2 mt-4', className)}
-      {...props}
-    />
-  ),
-
-  // Paragraphs
-  p: ({ className, ...props }: React.HTMLAttributes<HTMLParagraphElement>) => (
-    <p className={cn('text-foreground leading-7 mb-4', className)} {...props} />
-  ),
-
-  // Lists
-  ul: ({ className, ...props }: React.HTMLAttributes<HTMLUListElement>) => (
-    <ul
-      className={cn(
-        'list-disc list-inside text-foreground mb-4 space-y-2',
-        className
-      )}
-      {...props}
-    />
-  ),
-  ol: ({ className, ...props }: React.HTMLAttributes<HTMLOListElement>) => (
-    <ol
-      className={cn(
-        'list-decimal list-inside text-foreground mb-4 space-y-2',
-        className
-      )}
-      {...props}
-    />
-  ),
-  li: ({ className, ...props }: React.HTMLAttributes<HTMLLIElement>) => (
-    <li className={cn('text-foreground leading-6', className)} {...props} />
-  ),
-
-  // Links
-  a: ({ className, ...props }: React.HTMLAttributes<HTMLAnchorElement>) => (
-    <a
-      className={cn(
-        'text-primary hover:text-primary/80 underline underline-offset-4',
-        className
-      )}
-      {...props}
-    />
-  ),
-
-  // Emphasis
-  strong: ({ className, ...props }: React.HTMLAttributes<HTMLElement>) => (
-    <strong
-      className={cn('font-semibold text-foreground', className)}
-      {...props}
-    />
-  ),
-
-  em: ({ className, ...props }: React.HTMLAttributes<HTMLElement>) => (
-    <em className={cn('italic text-foreground', className)} {...props} />
-  ),
-
-  // Code
-  code: ({ className, ...props }: React.HTMLAttributes<HTMLElement>) => (
-    <code
-      className={cn(
-        'bg-muted px-2 py-1 rounded-md text-sm font-mono text-foreground',
-        className
-      )}
-      {...props}
-    />
-  ),
-
-  // Blockquotes
-  blockquote: ({
-    className,
-    ...props
-  }: React.HTMLAttributes<HTMLQuoteElement>) => (
-    <blockquote
-      className={cn(
-        'border-l-4 border-primary pl-6 my-6 italic text-muted-foreground',
-        className
-      )}
-      {...props}
-    />
-  ),
-
-  // Horizontal rule
-  hr: ({ className, ...props }: React.HTMLAttributes<HTMLHRElement>) => (
-    <hr className={cn('border-border my-8', className)} {...props} />
-  ),
-};
-
 export function MDXContent({ content, className }: MDXContentProps) {
   return (
     <div
@@ -135,32 +16,150 @@ export function MDXContent({ content, className }: MDXContentProps) {
   );
 }
 
-// For when we need to render raw markdown content as HTML
+// Enhanced ebook-optimized markdown content renderer
 export function MarkdownContent({ content, className }: MDXContentProps) {
-  // Simple markdown-to-HTML conversion for basic formatting
+  // Enhanced markdown-to-HTML conversion with ebook typography
   const htmlContent = content
-    // Headers
-    .replace(/^### (.*$)/gim, '<h3>$1</h3>')
-    .replace(/^## (.*$)/gim, '<h2>$1</h2>')
-    .replace(/^# (.*$)/gim, '<h1>$1</h1>')
-    // Bold
-    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-    // Italic
-    .replace(/\*(.*?)\*/g, '<em>$1</em>')
-    // Line breaks
-    .replace(/\n\n/g, '</p><p>')
-    .replace(/\n/g, '<br>')
-    // Wrap in paragraphs
-    .replace(/^(.*)$/gm, '<p>$1</p>')
-    // Clean up empty paragraphs
-    .replace(/<p><\/p>/g, '')
-    .replace(/<p><h([1-6])>/g, '<h$1>')
-    .replace(/<\/h([1-6])><\/p>/g, '</h$1>');
+    // Headers with better formatting and scroll anchors
+    .replace(
+      /^### (.*$)/gim,
+      '<h3 class="text-xl font-medium mb-4 mt-8 text-foreground scroll-mt-20" id="$1">$1</h3>'
+    )
+    .replace(
+      /^## (.*$)/gim,
+      '<h2 class="text-2xl font-semibold mb-6 mt-10 text-foreground scroll-mt-20" id="$1">$1</h2>'
+    )
+    .replace(
+      /^# (.*$)/gim,
+      '<h1 class="text-3xl font-bold mb-8 mt-12 text-foreground border-b border-border pb-4 scroll-mt-20" id="$1">$1</h1>'
+    )
+
+    // Enhanced text formatting
+    .replace(
+      /\*\*(.*?)\*\*/g,
+      '<strong class="font-semibold text-foreground">$1</strong>'
+    )
+    .replace(/\*(.*?)\*/g, '<em class="italic text-muted-foreground">$1</em>')
+
+    // Better list handling
+    .replace(
+      /^\* (.*$)/gim,
+      '<li class="mb-2 text-muted-foreground leading-relaxed">$1</li>'
+    )
+    .replace(
+      /^- (.*$)/gim,
+      '<li class="mb-2 text-muted-foreground leading-relaxed">$1</li>'
+    )
+
+    // Paragraph processing with better spacing
+    .split('\n\n')
+    .map(paragraph => {
+      paragraph = paragraph.trim();
+      if (!paragraph) return '';
+
+      // Skip if already processed as heading or list
+      if (paragraph.startsWith('<h') || paragraph.startsWith('<li')) {
+        return paragraph;
+      }
+
+      // Handle lists
+      if (paragraph.includes('<li')) {
+        return `<ul class="mb-6 pl-6 space-y-1">${paragraph}</ul>`;
+      }
+
+      // Regular paragraphs
+      if (!paragraph.startsWith('<')) {
+        return `<p class="mb-6 text-muted-foreground leading-relaxed">${paragraph}</p>`;
+      }
+
+      return paragraph;
+    })
+    .join('\n')
+
+    // Clean up extra spacing
+    .replace(/\n+/g, '\n')
+    .replace(/<\/h([1-6])>\s*<p>/g, '</h$1>\n<p>')
+    .replace(/<\/ul>\s*<p>/g, '</ul>\n<p>')
+    .replace(/<\/p>\s*<h([1-6])/g, '</p>\n<h$1');
 
   return (
     <div
-      className={cn('prose prose-lg max-w-none dark:prose-invert', className)}
-      dangerouslySetInnerHTML={{ __html: htmlContent }}
-    />
+      className={cn(
+        'ebook-content max-w-none',
+        'prose prose-lg prose-slate dark:prose-invert',
+        // Ebook-specific typography
+        '[&>*]:max-w-[65ch] [&>*]:mx-auto', // Optimal reading width
+        // Override prose styles for better ebook experience
+        'prose-headings:font-display prose-headings:tracking-tight',
+        'prose-p:text-muted-foreground prose-p:leading-relaxed',
+        'prose-strong:text-foreground prose-strong:font-semibold',
+        'prose-em:text-muted-foreground',
+        className
+      )}
+    >
+      <div
+        className="space-y-0"
+        dangerouslySetInnerHTML={{ __html: htmlContent }}
+      />
+    </div>
+  );
+}
+
+// Table of Contents extractor
+export function extractHeadings(content: string) {
+  const headingRegex = /^(#{1,6})\s+(.+)$/gm;
+  const headings: Array<{ id: string; title: string; level: number }> = [];
+  let match;
+
+  while ((match = headingRegex.exec(content)) !== null) {
+    const level = match[1].length;
+    const title = match[2].trim();
+    const id = title
+      .toLowerCase()
+      .replace(/[^\w\s-]/g, '')
+      .replace(/\s+/g, '-');
+
+    headings.push({ id, title, level });
+  }
+
+  return headings;
+}
+
+// Table of Contents component
+export function TableOfContents({
+  content,
+  className,
+}: {
+  content: string;
+  className?: string;
+}) {
+  const headings = extractHeadings(content);
+
+  if (headings.length === 0) return null;
+
+  return (
+    <nav className={cn('toc bg-muted/30 rounded-lg p-6', className)}>
+      <h3 className="text-lg font-semibold mb-4 text-foreground">
+        Table of Contents
+      </h3>
+      <ul className="space-y-2">
+        {headings.map(({ id, title, level }) => (
+          <li
+            key={id}
+            className={cn(
+              'text-sm',
+              level === 1 && 'font-medium text-foreground',
+              level === 2 && 'pl-4 text-muted-foreground',
+              level === 3 && 'pl-8 text-muted-foreground',
+              level >= 4 && 'pl-12 text-muted-foreground'
+            )}
+          >
+            <a href={`#${id}`} className="hover:text-primary transition-colors">
+              {title}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
 }
