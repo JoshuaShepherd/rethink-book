@@ -1,0 +1,20 @@
+{
+  "activities": [
+    {
+      "id": "principle-2-reading",
+      "type": "reading",
+      "title": "Read: PRINCIPLE 2: RETHINK THE MISSIONARY NATURE OF THE CHURCH",
+      "description": "Read and understand PRINCIPLE 2: RETHINK THE MISSIONARY NATURE OF THE CHURCH",
+      "estimatedTime": 20,
+      "required": true
+    },
+    {
+      "id": "principle-2-reflection",
+      "type": "reflection",
+      "title": "Reflect on Principle 2",
+      "description": "Consider how this principle applies to your ministry context",
+      "estimatedTime": 15,
+      "required": true
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "activities": [
+    {
+      "id": "introduction-reading",
+      "type": "reading",
+      "title": "Read: INTRODUCTION",
+      "description": "Read and understand the concepts in INTRODUCTION",
+      "estimatedTime": 15,
+      "required": true
+    }
+  ]
+}

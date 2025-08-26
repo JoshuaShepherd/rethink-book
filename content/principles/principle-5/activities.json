@@ -1,0 +1,20 @@
+{
+  "activities": [
+    {
+      "id": "principle-5-reading",
+      "type": "reading",
+      "title": "Read: PRINCIPLE 5: POST-CHRISTENDOM",
+      "description": "Read and understand PRINCIPLE 5: POST-CHRISTENDOM",
+      "estimatedTime": 20,
+      "required": true
+    },
+    {
+      "id": "principle-5-reflection",
+      "type": "reflection",
+      "title": "Reflect on Principle 5",
+      "description": "Consider how this principle applies to your ministry context",
+      "estimatedTime": 15,
+      "required": true
+    }
+  ]
+}

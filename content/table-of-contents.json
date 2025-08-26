@@ -1,0 +1,83 @@
+{
+  "title": "Rethink: The 12 Principles",
+  "description": "A comprehensive guide to rethinking church through 12 missional principles",
+  "chapters": [
+    {
+      "slug": "introduction",
+      "title": "Introduction",
+      "description": "Setting the foundation for rethinking church"
+    },
+    {
+      "slug": "principle-1",
+      "title": "PRINCIPLE 1: RETHINK THE MISSIONARY NATURE OF GOD",
+      "description": "Principle 1: RETHINK THE MISSIONARY NATURE OF GOD",
+      "principleNumber": 1
+    },
+    {
+      "slug": "principle-2",
+      "title": "PRINCIPLE 2: RETHINK THE MISSIONARY NATURE OF THE CHURCH",
+      "description": "Principle 2: RETHINK THE MISSIONARY NATURE OF THE CHURCH",
+      "principleNumber": 2
+    },
+    {
+      "slug": "principle-3",
+      "title": "PRINCIPLE 3: INCARNATIONAL MISSION",
+      "description": "Principle 3: INCARNATIONAL MISSION",
+      "principleNumber": 3
+    },
+    {
+      "slug": "principle-4",
+      "title": "PRINCIPLE 4: RETHINK MISSIO DEI",
+      "description": "Principle 4: RETHINK MISSIO DEI",
+      "principleNumber": 4
+    },
+    {
+      "slug": "principle-5",
+      "title": "PRINCIPLE 5: POST-CHRISTENDOM",
+      "description": "Principle 5: POST-CHRISTENDOM",
+      "principleNumber": 5
+    },
+    {
+      "slug": "principle-6",
+      "title": "PRINCIPLE 6: RETHINK PLACE",
+      "description": "Principle 6: RETHINK PLACE",
+      "principleNumber": 6
+    },
+    {
+      "slug": "principle-7",
+      "title": "PRINCIPLE 7: RETHINK VOCATION",
+      "description": "Principle 7: RETHINK VOCATION",
+      "principleNumber": 7
+    },
+    {
+      "slug": "principle-8",
+      "title": "PRINCIPLE 8: RETHINK MULTIPLICATION",
+      "description": "Principle 8: RETHINK MULTIPLICATION",
+      "principleNumber": 8
+    },
+    {
+      "slug": "principle-9",
+      "title": "PRINCIPLE 9: RETHINK TEAMS",
+      "description": "Principle 9: RETHINK TEAMS",
+      "principleNumber": 9
+    },
+    {
+      "slug": "principle-10",
+      "title": "PRINCIPLE 10: RETHINK STRATEGIES AND MODELS",
+      "description": "Principle 10: RETHINK STRATEGIES AND MODELS",
+      "principleNumber": 10
+    },
+    {
+      "slug": "principle-11",
+      "title": "PRINCIPLE 11: RETHINK FLOW",
+      "description": "Principle 11: RETHINK FLOW",
+      "principleNumber": 11
+    },
+    {
+      "slug": "principle-12",
+      "title": "PRINCIPLE 12: RETHINK SCORECARDS",
+      "description": "Principle 12: RETHINK SCORECARDS",
+      "principleNumber": 12
+    }
+  ]
+}

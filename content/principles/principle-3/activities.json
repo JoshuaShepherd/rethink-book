@@ -1,0 +1,20 @@
+{
+  "activities": [
+    {
+      "id": "principle-3-reading",
+      "type": "reading",
+      "title": "Read: PRINCIPLE 3: INCARNATIONAL MISSION",
+      "description": "Read and understand PRINCIPLE 3: INCARNATIONAL MISSION",
+      "estimatedTime": 20,
+      "required": true
+    },
+    {
+      "id": "principle-3-reflection",
+      "type": "reflection",
+      "title": "Reflect on Principle 3",
+      "description": "Consider how this principle applies to your ministry context",
+      "estimatedTime": 15,
+      "required": true
+    }
+  ]
+}

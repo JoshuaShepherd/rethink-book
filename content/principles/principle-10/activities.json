@@ -1,0 +1,20 @@
+{
+  "activities": [
+    {
+      "id": "principle-10-reading",
+      "type": "reading",
+      "title": "Read: PRINCIPLE 10: RETHINK STRATEGIES AND MODELS",
+      "description": "Read and understand PRINCIPLE 10: RETHINK STRATEGIES AND MODELS",
+      "estimatedTime": 20,
+      "required": true
+    },
+    {
+      "id": "principle-10-reflection",
+      "type": "reflection",
+      "title": "Reflect on Principle 10",
+      "description": "Consider how this principle applies to your ministry context",
+      "estimatedTime": 15,
+      "required": true
+    }
+  ]
+}

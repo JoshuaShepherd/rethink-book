@@ -1,0 +1,20 @@
+{
+  "activities": [
+    {
+      "id": "principle-1-reading",
+      "type": "reading",
+      "title": "Read: PRINCIPLE 1: RETHINK THE MISSIONARY NATURE OF GOD",
+      "description": "Read and understand PRINCIPLE 1: RETHINK THE MISSIONARY NATURE OF GOD",
+      "estimatedTime": 20,
+      "required": true
+    },
+    {
+      "id": "principle-1-reflection",
+      "type": "reflection",
+      "title": "Reflect on Principle 1",
+      "description": "Consider how this principle applies to your ministry context",
+      "estimatedTime": 15,
+      "required": true
+    }
+  ]
+}

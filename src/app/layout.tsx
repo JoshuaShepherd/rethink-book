@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/components/layout/theme-provider';
+import { GlassNavigation } from '@/components/layout/glass-navigation';
 import { Toaster } from 'react-hot-toast';
 import '@/styles/globals.css';
 
@@ -35,7 +36,10 @@ export default function RootLayout({
         className={`${inter.variable} font-inter antialiased bg-background text-text-primary overflow-x-hidden`}
       >
         <ThemeProvider>
-          <div className="relative min-h-screen">{children}</div>
+          <div className="relative min-h-screen">
+            <GlassNavigation />
+            {children}
+          </div>
           <Toaster
             position="top-right"
             toastOptions={{

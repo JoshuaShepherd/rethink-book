@@ -1,0 +1,20 @@
+{
+  "activities": [
+    {
+      "id": "principle-6-reading",
+      "type": "reading",
+      "title": "Read: PRINCIPLE 6: RETHINK PLACE",
+      "description": "Read and understand PRINCIPLE 6: RETHINK PLACE",
+      "estimatedTime": 20,
+      "required": true
+    },
+    {
+      "id": "principle-6-reflection",
+      "type": "reflection",
+      "title": "Reflect on Principle 6",
+      "description": "Consider how this principle applies to your ministry context",
+      "estimatedTime": 15,
+      "required": true
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "activities": [
+    {
+      "id": "principle-8-reading",
+      "type": "reading",
+      "title": "Read: PRINCIPLE 8: RETHINK MULTIPLICATION",
+      "description": "Read and understand PRINCIPLE 8: RETHINK MULTIPLICATION",
+      "estimatedTime": 20,
+      "required": true
+    },
+    {
+      "id": "principle-8-reflection",
+      "type": "reflection",
+      "title": "Reflect on Principle 8",
+      "description": "Consider how this principle applies to your ministry context",
+      "estimatedTime": 15,
+      "required": true
+    }
+  ]
+}

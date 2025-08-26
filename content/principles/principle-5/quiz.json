@@ -1,0 +1,19 @@
+{
+  "title": "PRINCIPLE 5: POST-CHRISTENDOM - Knowledge Check",
+  "description": "Test your understanding of PRINCIPLE 5: POST-CHRISTENDOM",
+  "questions": [
+    {
+      "id": "q1-principle-5",
+      "type": "multiple-choice",
+      "question": "What is the main focus of PRINCIPLE 5:?",
+      "options": [
+        "Personal spiritual growth",
+        "Missional church principles",
+        "Traditional church practices",
+        "Administrative procedures"
+      ],
+      "correct": 1,
+      "explanation": "This principle focuses on rethinking church practices from a missional perspective."
+    }
+  ]
+}

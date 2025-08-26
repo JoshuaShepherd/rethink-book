@@ -36,6 +36,12 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
 }
 
 
+// Validate ../../src/app/about/page.tsx
+{
+  const handler = {} as typeof import("../../src/app/about/page.js")
+  handler satisfies AppPageConfig<"/about">
+}
+
 // Validate ../../src/app/admin/page.tsx
 {
   const handler = {} as typeof import("../../src/app/admin/page.js")
@@ -60,6 +66,42 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
   handler satisfies AppPageConfig<"/admin/principles">
 }
 
+// Validate ../../src/app/blog/[slug]/page.tsx
+{
+  const handler = {} as typeof import("../../src/app/blog/[slug]/page.js")
+  handler satisfies AppPageConfig<"/blog/[slug]">
+}
+
+// Validate ../../src/app/blog/page.tsx
+{
+  const handler = {} as typeof import("../../src/app/blog/page.js")
+  handler satisfies AppPageConfig<"/blog">
+}
+
+// Validate ../../src/app/book/[slug]/page.tsx
+{
+  const handler = {} as typeof import("../../src/app/book/[slug]/page.js")
+  handler satisfies AppPageConfig<"/book/[slug]">
+}
+
+// Validate ../../src/app/book/page.tsx
+{
+  const handler = {} as typeof import("../../src/app/book/page.js")
+  handler satisfies AppPageConfig<"/book">
+}
+
+// Validate ../../src/app/contact/page.tsx
+{
+  const handler = {} as typeof import("../../src/app/contact/page.js")
+  handler satisfies AppPageConfig<"/contact">
+}
+
+// Validate ../../src/app/ebook-example/page.tsx
+{
+  const handler = {} as typeof import("../../src/app/ebook-example/page.js")
+  handler satisfies AppPageConfig<"/ebook-example">
+}
+
 // Validate ../../src/app/page.tsx
 {
   const handler = {} as typeof import("../../src/app/page.js")
@@ -82,6 +124,12 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
 {
   const handler = {} as typeof import("../../src/app/principles/page.js")
   handler satisfies AppPageConfig<"/principles">
+}
+
+// Validate ../../src/app/resources/page.tsx
+{
+  const handler = {} as typeof import("../../src/app/resources/page.js")
+  handler satisfies AppPageConfig<"/resources">
 }
 
 

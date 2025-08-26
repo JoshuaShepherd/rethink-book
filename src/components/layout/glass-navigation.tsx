@@ -7,12 +7,15 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { ThemeToggle } from '@/components/ui/theme-toggle';
 import { cn } from '@/lib/utils';
+import Link from 'next/link';
 
 const navigationItems = [
-  { name: 'Solutions', href: '#solutions' },
-  { name: 'Platform', href: '#platform' },
-  { name: 'Enterprise', href: '#enterprise' },
-  { name: 'Resources', href: '#resources' },
+  { name: 'About', href: '/about' },
+  { name: 'Book', href: '/book' },
+  { name: 'Principles', href: '/principles' },
+  { name: 'Blog', href: '/blog' },
+  { name: 'Resources', href: '/resources' },
+  { name: 'Contact', href: '/contact' },
 ];
 
 export function GlassNavigation() {
@@ -53,28 +56,30 @@ export function GlassNavigation() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="flex items-center space-x-2"
-            >
-              <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg shadow-glow animate-glow-pulse" />
-              <span className="font-satoshi text-xl font-semibold text-text-primary">
-                FluidElegance
-              </span>
-            </motion.div>
+            <Link href="/">
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="flex items-center space-x-2 cursor-pointer"
+              >
+                <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg shadow-glow animate-glow-pulse" />
+                <span className="font-satoshi text-xl font-semibold text-text-primary">
+                  Brad Brisco
+                </span>
+              </motion.div>
+            </Link>
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
               {navigationItems.map(item => (
-                <motion.a
-                  key={item.name}
-                  href={item.href}
-                  whileHover={{ scale: 1.05 }}
-                  className="text-text-secondary hover:text-text-primary elegant-transition relative group"
-                >
-                  {item.name}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full elegant-transition" />
-                </motion.a>
+                <Link key={item.name} href={item.href}>
+                  <motion.span
+                    whileHover={{ scale: 1.05 }}
+                    className="text-text-secondary hover:text-text-primary elegant-transition relative group cursor-pointer"
+                  >
+                    {item.name}
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full elegant-transition" />
+                  </motion.span>
+                </Link>
               ))}
             </nav>
 
@@ -104,7 +109,7 @@ export function GlassNavigation() {
                         className="absolute right-0 top-0"
                       >
                         <Input
-                          placeholder="Search executive insights..."
+                          placeholder="Search insights..."
                           className="w-60 pr-12"
                           autoFocus
                         />
@@ -116,10 +121,12 @@ export function GlassNavigation() {
 
               <ThemeToggle />
 
-              <Button variant="premium" size="lg" className="font-medium">
-                Schedule Consultation
-                <ChevronRight className="ml-2 h-4 w-4" />
-              </Button>
+              <Link href="/contact">
+                <Button variant="premium" size="lg" className="font-medium">
+                  Book Speaking
+                  <ChevronRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -158,15 +165,15 @@ export function GlassNavigation() {
             >
               <div className="flex flex-col space-y-6 mt-20">
                 {navigationItems.map(item => (
-                  <motion.a
-                    key={item.name}
-                    href={item.href}
-                    whileHover={{ x: 10 }}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="text-lg text-text-secondary hover:text-text-primary elegant-transition"
-                  >
-                    {item.name}
-                  </motion.a>
+                  <Link key={item.name} href={item.href}>
+                    <motion.span
+                      whileHover={{ x: 10 }}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="block text-lg text-text-secondary hover:text-text-primary elegant-transition cursor-pointer"
+                    >
+                      {item.name}
+                    </motion.span>
+                  </Link>
                 ))}
 
                 <div className="pt-4 border-t border-gray-300 dark:border-gray-700">
@@ -175,9 +182,11 @@ export function GlassNavigation() {
                     <ThemeToggle />
                   </div>
                   <Input placeholder="Search..." className="mb-4" />
-                  <Button variant="premium" size="lg" className="w-full">
-                    Schedule Consultation
-                  </Button>
+                  <Link href="/contact">
+                    <Button variant="premium" size="lg" className="w-full">
+                      Book Speaking
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </motion.div>
