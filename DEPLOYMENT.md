@@ -8,9 +8,9 @@ Vercel is the platform built by the Next.js team and offers the best experience 
 
 ### Quick Deploy to Vercel:
 
-1. **One-Click Deploy**: 
+1. **One-Click Deploy**:
    - Visit [vercel.com](https://vercel.com)
-   - Click "New Project" 
+   - Click "New Project"
    - Import from GitHub: `JoshuaShepherd/rethink-book`
    - Deploy! 🎉
 
@@ -19,6 +19,7 @@ Vercel is the platform built by the Next.js team and offers the best experience 
    - Update DNS records as instructed
 
 ### Environment Variables (if needed):
+
 ```bash
 # Add in Vercel dashboard under Settings > Environment Variables
 NEXT_PUBLIC_SITE_URL=https://yourdomain.com
@@ -36,11 +37,12 @@ NEXT_PUBLIC_SITE_URL=https://yourdomain.com
 ✅ **All Components Export Properly**: Fixed component import/export issues  
 ✅ **No TypeScript Errors**: Build passes type checking  
 ✅ **Git Repository**: Connected to JoshuaShepherd/rethink-book  
-✅ **GitHub Actions**: CI/CD workflow configured  
+✅ **GitHub Actions**: CI/CD workflow configured
 
 ## 🏗️ Build Configuration
 
 The project includes:
+
 - **Pre-build Content Generation**: `npm run build:content`
 - **Static Site Generation**: Pages are pre-rendered for performance
 - **Optimized Bundle**: Automatic code splitting and optimization
@@ -48,14 +50,16 @@ The project includes:
 ## 🔄 Automated Deployment
 
 GitHub Actions workflow (`.github/workflows/deploy.yml`) handles:
+
 - ✅ Dependency installation
-- ✅ Linting and type checking  
+- ✅ Linting and type checking
 - ✅ Build verification
 - ✅ Multiple deployment targets
 
 ## 📊 Build Stats
 
 Recent build output:
+
 ```
 Route (app)                                 Size     First Load JS
 ├ ○ /                                    7.13 kB         156 kB

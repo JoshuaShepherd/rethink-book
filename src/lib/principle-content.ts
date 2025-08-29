@@ -812,6 +812,224 @@ with a missionary God, who desires to reconcile all of creation to
 Himself for His glory. We, the church, are called to bless and reach
 the nations.`,
   },
+  'principle-3': {
+    title: 'PRINCIPLE 3: INCARNATIONAL MISSION',
+    hasContent: true,
+    content: `# PRINCIPLE 3: INCARNATIONAL MISSION
+
+> "The Word became flesh and blood and moved into the neighborhood" (John 1:14, MSG).
+
+## INCARNATIONAL MISSION
+
+If God's central way of reaching His world was to incarnate Himself, then the church's mission should be incarnational as well.
+
+> "In the incarnation of Jesus, God revealed himself as the One who is with and for his creation. Now, as the Risen Lord sends his Spirit to empower the church, we are called to become God's people present in the world, with and for the world." —Darrell Guder
+
+The last two **missiological** principles we examined illuminated the
+
+“In the incarnation of Jesus, God revealed himself as the
+One who is with and for his creation. Now, as the Risen
+Lord sends his Spirit to empower the church, we are
+called to become God’s people present in the world, with
+and for the world.” —Darrell Guder
+The last two **missiological** principles we examined illuminated the
+missionary nature of God and the “sentness” of the church. God is
+a missionary God who sends a missionary church. However, being
+sent is only part of the story. The language of “**incarnational** mission”
+represents the rooting of our lives and the gospel into the place we
+live. If the essence of **missional** living is sending, then the heart of
+**incarnational** mission is staying.
+
+## THE INCARNATION
+
+The word incarnation comes from a Latin word that literally means
+“in the flesh.” It refers to the act whereby God took on human flesh and
+entered our world to bring about reconciliation between Himself and
+humanity. The incarnation is God’s ultimate **missional** participation in
+creation (John 3:16-17). When God entered our world in and through
+the person of Jesus, He came to live among us. He **eskénosen**—literally,
+“set up a tent.” In simpler terms, “The Word became flesh and blood,
+and moved into the neighborhood” (John 1:14, MSG).
+
+# I N C A R N AT I O N A L M I S S I O N
+
+If God’s central way of reaching His world was to incarnate Himself
+in Jesus, then our way of reaching the world should likewise be
+**incarnational**. It is important to acknowledge that the incarnation
+of Jesus was a special, unrepeatable event. Though we will never
+be able to embody God the way Jesus does, we ought to be able to
+make a distinction between the Incarnation with a capital “I” and
+**incarnational** ministry.
+Obviously, there is nothing wrong with inviting believers to model
+their lives after the life of Jesus. The apostles encouraged Christians to
+imitate Christ as a way of identifying with Him. Both Peter and Paul
+insisted that Jesus is the model for Christian living. “To this you were
+called, because Christ suffered for you, leaving you an example, that
+you should follow in his steps” (1 Peter 2:21). Peter makes clear that
+Jesus’ life is to be our example. “Follow my example, as I follow the
+example of Christ” (1 Corinthians 11:1). And Paul states that we can
+follow his way of life because he is so closely following the way of Jesus.
+Missiologist Michael Frost elaborates on the theme of following Christ’s
+example from the book of Philippians:
+Paul makes this point even more strongly in Philippians, in
+which he tells us that our “attitude should be the same as
+that of Christ Jesus” (Philippians 2:5). We often assume that
+this passage then commends to us Jesus’ humility, which is
+clearly present in the text. But Jesus’ humility is commended
+to us insofar as it is expressed in his commitments to identi­
+fication and relinquishment. First, to follow Jesus’ example
+means that we should share his profoundly humble identifi­
+cation with sinful humankind (Philippians 2:7b-8a). Second,
+those of us who wish to emulate Jesus should be aware of
+his equally humble willingness to empty himself and make
+himself nothing for the sake of God’s redemptive purposes
+(Philippians 2:6-7a). … To embrace an **incarnational** ministry,
+then, involves a willingness to relinquish our own desires and
+interests in the service of others.4
+This examination of the Philippians speaks to two very important
+ideas related to **incarnational** mission—the concepts of proximity
+and presence.
+**incarnational** mission involves living in close proximity with others.
+We cannot love and serve those God has sent us to from a distance.
+Jesus took on flesh and blood and moved into the neighborhood, so
+we must do the same. This may require moving geographically to
+be closer to those to whom God has sent us. At the very least, it will
+demand creating time and space to be directly and actively involved
+in the lives of people we are seeking to reach.
+The concept of presence moves beyond mere proximity to identifica­
+tion and surrender. Jesus identified with and advocated for those who
+He was called to serve. As the Philippians passage makes clear, He
+humbled Himself. He literally emptied Himself for the sake of others.
+This realization reveals an **incarnational** approach that calls us to
+relational identification with our neighbors, leading us to tangible
+acts of love and sacrifice.
+Jesus’ words from John 20:21 are most often used to emphasize the
+sending of the disciples and subsequently the church, “As the Father
+has sent me, I am sending you.” But we must not neglect the first half
+of the passage. Jesus says, “As the Father has sent me …” (emphasis
+added). The word “as” (or in some translations “just as”) translates
+to “like” or “in a similar manner.” In other words, we need to be sent
+like Jesus was sent. To whom and in what manner was Jesus sent?
+He was sent to the down and outers of society. He was with and for
+tax collectors, the oppressed, the poor, and the diseased. If Jesus is
+our example, we are called to do likewise.
+In The Incarnation and the Church’s _Witness_, Darrell Guder provides
+an insightful summary on the incarnation of Jesus and what it means
+to be a Christian.
+We arrive at the concept of **incarnational** witness as one way
+of expounding on the character of our missionary vocation. In
+the incarnation of Jesus Christ, God revealed himself as the One
+who is with and for his creation. Now, as the Risen Lord sends
+his Spirit to empower the church, we are called to become
+God’s people present in the world, with and for the world,
+like St. John pointing always to Christ. The most **incarnational**
+dimension of our witness is defined by the cross itself, as we
+experience with Jesus that bearing his cross transforms our
+suffering into witness.
+**incarnational** witness is, therefore, a way of describing Chris­
+tian vocation in terms of Jesus Christ as the messenger, the
+message, and the model for all who follow after him. To speak
+of the incarnation missionally is to link who Jesus was, what
+Jesus did, and how he did it, in one great event that defines
+all that it means to be Christian.5
+
+# N U T S A N D B O LT S
+
+What does all this talk of identification, proximity, and presence have
+to do with daily living? It may sound cliché, but it really is all about
+relationships. It’s all about getting close enough to people to listen,
+understand their hopes and dreams, and coming to love them the
+way Jesus does.
+The Gospels tell us that Jesus is a friend of sinners. Hear that—a
+friend. What constitutes a friend? When another person invites you
+to meet their friends, you are in. The Bible is full of stories of people
+inviting Jesus to meet and spend time with their friends. People were
+drawn to the mysterious love and holiness of Jesus. Someone once
+said that people who were not like Jesus liked Jesus. As followers of
+Jesus, shouldn’t that also be true of us? That doesn’t happen without
+living with and among people. What will it take for you to incarnate
+the life of Jesus? What will it take for you to really move into your
+neighborhood, perhaps for the very first time?
+
+# S E E K I N G T H E W E L FA R E O F
+
+# YO U R C I T Y
+
+A fascinating passage in the Old Testament provides a picture of
+what it looks like to live out **incarnational** mission. It gives practical
+instructions for digging into the places where we live. This is espe­
+cially helpful when Christians sense they are living in a world that
+is hostile toward their beliefs or living in a place that doesn’t really
+feel like home.
+In Jeremiah, we read how the nation of Israel had forsaken God’s
+law and found themselves taken into captivity, exiled far from their
+Jerusalem homeland. God sent the Babylonian empire to discipline
+His people. As they were relocated to a foreign, idolatrous land, they
+heard whispers that their time in the hostile country would be short.
+False prophets began telling the nation of Israel that God would soon
+deliver them and settling into this new, strange land was foolish.
+God’s word through the prophet Jeremiah was quite the opposite.
+Thus says the Lord of hosts, the God of Israel, to all the exiles
+whom I have sent into exile from Jerusalem to Babylon: Build
+houses and live in them; plant gardens and eat their produce.
+Take wives and have sons and daughters; take wives for your
+sons, and give your daughters in marriage, that they may bear
+sons and daughters; multiply there, and do not decrease. But
+seek the welfare of the city where I have sent you into exile,
+and pray to the Lord on its behalf, for in its welfare you will
+find your welfare (Jeremiah 29:4-7, ESV).
+The words of Jeremiah were shocking. The premise of his message
+was that the exiles would be in Babylon for several generations and
+that the Israelites would simply need to come to terms with this fact.
+God was telling them to settle down and get used to being in this
+hostile, ungodly place.
+Jeremiah counseled his community not to be nostalgic for the past,
+for the past could not be recovered. He did not advise them to plan
+for insurrection, for there was no promise of their restoration in Jeru­
+salem, at least not any time soon. Nor was the community’s survival
+tied to the remnant that remained in Jerusalem (Jeremiah 24:5-10).
+For Jeremiah, exile did not mean that God had abandoned Israel.
+Rather, exile was the place where God was at work. God’s purposes
+for Israel were served by the Babylonian invasion.
+Jeremiah’s instructions were more counterintuitive than they might
+at first seem. He tells the Jews to “seek the welfare” of their captors
+and pray for the very people who destroyed their homeland, because
+the welfare of the exiles and the captors were bound together. If God’s
+purposes for Israel were being fulfilled through their captivity, then
+as the exiles pursued the shalom of Babylon, God would provide
+shalom for those in exile.6
+It seemed reasonable for the Jews to be hostile to their captors. It
+also would have been natural for them to withdraw from the world
+around them. By the same token, it would have been easy for them
+to simply assimilate into the Babylonian culture. Any of these options
+would have made sense in human terms. But God called the Israelites
+to something radically different, not to be defensive against, isolated
+from, or absorbed into the dominant culture but instead to be incar­
+nated within it.7 He was calling them to dig into the place He had sent
+them, to stay where they would be doing life for a long time.
+What God instructed the exiles to do is rather ordinary. Consider the
+list from Jeremiah 29:
+• Build houses and live in them.
+• Plant gardens and eat their produce.
+• Have children.
+• Marry off your children so they have children.
+• Seek the welfare of the city.
+• Pray for the welfare of the city.
+Nothing from this list is dramatic or miraculous. These are normal,
+everyday activities. It could represent any person, regardless of
+income, social status, education, vocation, or geographical location.
+The way the kingdom of God takes root in the lives of people and
+ultimately changes a city is by exiles living normal, everyday lives as
+citizens of the King in every neighborhood and city. We build houses.
+We plant gardens. We have children. We seek the welfare of our city.
+Often, the ways of Jesus are indeed local and ordinary.
+Are you willing to commit to the welfare of your city? Will you allow
+your imagination to see a movement that begins with the local and
+ordinary but over time becomes global and extraordinary? If your
+answer is yes, then together let’s seek the welfare of our neighbor­
+hoods and let us strive for it to spill over into every nook and cranny
+of our city.`,
+  },
   'principle-4': {
     title: 'PRINCIPLE 4: RETHINK MISSIO DEI',
     hasContent: true,
@@ -1185,6 +1403,167 @@ lives to those who are disconnected. But in all of the practical actions,
 the how must be rooted in the why of **incarnational** presence. The
 journey of restoring the relational fabric of our communities must
 begin with our tangible presence in the place where God has called us.`,
+  },
+  'principle-7': {
+    title: 'PRINCIPLE 7: RETHINK VOCATION',
+    hasContent: true,
+    content: `# PRINCIPLE 7: RETHINK VOCATION
+
+> "Believers participate in Christ's priesthood not within the walls of the Church but in the daily business of the world." —Lesslie Newbigin
+
+Consider for a moment what you did yesterday. How much of yourLE 7: RETHINK VOCATION
+
+> "Believers participate in Christ's priesthood not within the walls of the Church but in the daily business of the world." —Lesslie Newbigin
+
+Consider for a moment what you did yesterday. How much of yourscription: 'Principle 7: RETHINK VOCATION'
+pageEnd: 43
+pageStart: 39
+principleNumber: 7
+slug: principle-7
+title: 'PRINCIPLE 7: RETHINK VOCATION'
+type: principle
+
+---
+
+# PRINCIPLE 7: RETHINK VOCATION
+
+“Believers participate in Christ’s priesthood not within the
+walls of the Church but in the daily business of the world.”
+
+> —Lesslie Newbigin
+> Consider for a moment what you did yesterday. How much of your
+> day was spiritual and how much was secular?
+> Does selling insurance, running a coffee shop, driving for Uber, teaching
+> at a public school, or waiting tables at the local restaurant matter to God?
+> Most people would probably answer, “No, not much.” Yet, Christians
+> may spend more than half of their lives in work-related activities.
+> Rethinking vocation must start with a consideration of the sacred and
+> secular divide. Greco-Roman thought was that the world is divided
+> into two competing domains: the sacred or spiritual and the secular
+> or material. Such a worldview tends to assume that the spiritual is the
+> higher realm and that the material world lacks deep meaning. This
+> approach leads to multiple divisions in thinking, including dividing the
+> clergy (spiritual) and the laity (secular), the church (spiritual) and the
+> world (secular), and between so-called spiritual practices (Bible study,
+> prayer, worship) and so-called secular practices (work, art, eating).
+> This approach happens often in our understanding of vocation. The
+> word vocation comes from the Latin vocatio, meaning a call or summons.
+> It is normally used to refer to a calling or occupation that a person is
+> drawn to or is particularly suited for. In the 4th Century, Augustine
+> compartmentalized the way people lived. He divided life into the
+> contemplative life and the active life. The contemplative life was given
+> to sacred things and was seen as a higher calling, while the active life
+> was given to secular things and regarded as a lower calling. This kind
+> of thinking created a distorted view of work that continues today.
+> For example, the language of “full-time Christian work” or “full-time
+> ministry” is commonly used to describe those whose vocational calling
+> is to be a pastor, missionary, or parachurch worker. However, a proper
+> and biblical understanding is that all Christians are called to full-time
+> ministry, doing good work for the glory of God regardless of their
+> vocation. If God reigns over all things, then all things are sacred. Too
+> often, people leave their homes on Monday morning and somehow
+> think they leave God behind. Instead, the church needs to help people
+> recognize that regardless of what God has called them to do, they are
+> contributing to and participating in God’s redemptive mission.
+> This **missiological** principle is twofold. First, we need to understand the
+> harm that this view of vocation has on our understanding of calling
+> in general but also on our calling to both be in the marketplace and
+> to be a faith community.
+> Second, we need to recognize how rethinking vocation can open other
+> **missiological** opportunities for church **multiplication** with those who
+> are already in the marketplace. Then, we will begin to see the benefits
+> of bivocational and covocational ministry.
+
+## B I V O C AT I O N A L A N D C O V O C AT I O N A L
+
+# E N G A G E M E N T
+
+Often the language of bivocational invokes the thought of two distinct
+vocations. To help us reconnect the two, we might use the language
+of “covocation.” The prefix “co” is the reduced form of the Latin com
+which means “together” or “in common.” English words like cofounder,
+copilot, or companion are examples of words that denote partnership
+and equality.
+Covocation embodies the reality that if a person is called to be a
+dentist, teacher, web-designer, or plumber and also called to start
+a church, the different callings are not isolated from one another.
+Instead, they are interlinked and equal. The language of covocation
+pushes against the temptation to compartmentalize different aspects
+of our lives. When we begin to understand that each of our callings
+are legitimate and necessary aspects of God’s mission, they can be
+leveraged together for His purposes.
+Perhaps the most significant benefit of being bivocational or covoca­
+tional is that it provides the planter greater opportunities to connect
+relationally with people in the community. Some people have referred
+to this as “marketplace mission” because relationships develop as a
+result of the planter’s vocational connections. Their marketplace job
+is not a hindrance to what God is doing but an advantage to engaging
+God’s mission.
+Being bivocational or covocational gives planters access to a mission
+field that is not readily available to a pastor who is employed full-time
+by a local church. Many of these pastors find themselves working
+inside a church bubble, spending most of their time talking with
+church people about church things. Even when a pastor makes
+the effort to engage people in their community, they often find it
+challenging to fully relate. It is not until a person incarnates into the
+local context that they begin to understand the values and interests
+of the people in their community.
+Bivocational or covocational ministry also helps to diminish the sacred
+and secular divide with respect to vocation. The congregation can see
+the planter model the truth that all vocations are sacred. Whatever
+work God has called a person to do, it is a sacred calling. As a result, the
+benefits of being in the marketplace are multiplied exponentially as
+every member recognizes how their vocation fits into God’s mission.
+Another **missional** benefit is that working in an occupation in the
+community builds credibility with those outside the church. In a
+post-Christian context, where people are skeptical of the church, it
+is important for non-Christians to see that church planters have jobs
+like everyone else. In a time when Christianity doesn’t have the best
+reputation, it can provide significant “street-cred” with those outside
+the church.
+
+# F I N A N C I A L S TA B I L I T Y
+
+Another major benefit of bivocational or covocational ministry relates
+to the financial stability it provides in at least three different areas.
+
+# 1. THE PLANTER
+
+When the primary financial support comes from a marketplace
+source rather than the church, there is usually less financial strain
+on a family. This is especially true when the planter is employed
+full-time in a vocation that provides benefits like insurance, vacation,
+and retirement.
+
+# 2. THE CHURCH
+
+A church led by bivocational or covocational planters usually finds
+its financial base is much stronger. Without the need to provide full-
+time salaries and benefits, the church can put more of its financial
+resources into ministry.
+
+# 3. THE CHURCH PLANTING ENTITY
+
+Many denominations plan to plant hundreds, if not thousands, of
+churches over the next several years. Bivocational and covocational
+ministry provides the opportunity for funding entities to embrace more
+sustainable church **multiplication** practices. This is especially necessary
+for planters who are engaging in socioeconomically diverse contexts.
+Many traditional church plants start with a large annual budget
+supported by multiple funding streams, including partnering
+churches and denominational entities. Because most funding models
+are structured over 3–5 years, it puts pressure on the planter to grow
+the church quickly so it can become self-sustaining before funding
+runs out. The unfortunate reality is that a planter is often forced to
+attract financial givers rather than engaging in the brokenness in
+their community. Bivocational or covocational ministry provides a
+more viable financial model that allows the planter to focus primarily
+on mission.
+This move towards planting more churches with bivocational or
+covocational planters must start by rethinking vocation. We need
+to help people see that regardless of what God has called them to
+do in the marketplace, their work matters and can align with God’s
+redemptive purposes.`,
   },
   'principle-8': {
     title: 'PRINCIPLE 8: RETHINK MULTIPLICATION',

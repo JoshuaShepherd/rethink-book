@@ -1,1 +1,184 @@
-{"version":3,"caseSensitive":false,"basePath":"","rewrites":{"beforeFiles":[],"afterFiles":[],"fallback":[]},"redirects":[{"source":"/:path+/","destination":"/:path+","permanent":true,"internal":true,"regex":"^(?:\\/((?:[^\\/]+?)(?:\\/(?:[^\\/]+?))*))\\/$"}],"headers":[]}
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/admin/principles/[id]/edit",
+      "regex": "^/admin/principles/([^/]+?)/edit(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/principles/(?<nxtPid>[^/]+?)/edit(?:/)?$"
+    },
+    {
+      "page": "/blog/[slug]",
+      "regex": "^/blog/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/blog/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/book/[slug]",
+      "regex": "^/book/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/book/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/principles/[slug]",
+      "regex": "^/principles/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/principles/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/principles/[slug]/quiz",
+      "regex": "^/principles/([^/]+?)/quiz(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/principles/(?<nxtPslug>[^/]+?)/quiz(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/about",
+      "regex": "^/about(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about(?:/)?$"
+    },
+    {
+      "page": "/admin",
+      "regex": "^/admin(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin(?:/)?$"
+    },
+    {
+      "page": "/admin/principles",
+      "regex": "^/admin/principles(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/principles(?:/)?$"
+    },
+    {
+      "page": "/admin/principles/new",
+      "regex": "^/admin/principles/new(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/principles/new(?:/)?$"
+    },
+    {
+      "page": "/blog",
+      "regex": "^/blog(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/blog(?:/)?$"
+    },
+    {
+      "page": "/book",
+      "regex": "^/book(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/book(?:/)?$"
+    },
+    {
+      "page": "/contact",
+      "regex": "^/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact(?:/)?$"
+    },
+    {
+      "page": "/course",
+      "regex": "^/course(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/course(?:/)?$"
+    },
+    {
+      "page": "/course/week-1",
+      "regex": "^/course/week\\-1(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/course/week\\-1(?:/)?$"
+    },
+    {
+      "page": "/course/week-2",
+      "regex": "^/course/week\\-2(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/course/week\\-2(?:/)?$"
+    },
+    {
+      "page": "/course/week-3",
+      "regex": "^/course/week\\-3(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/course/week\\-3(?:/)?$"
+    },
+    {
+      "page": "/course/week-4",
+      "regex": "^/course/week\\-4(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/course/week\\-4(?:/)?$"
+    },
+    {
+      "page": "/ebook-example",
+      "regex": "^/ebook\\-example(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/ebook\\-example(?:/)?$"
+    },
+    {
+      "page": "/principles",
+      "regex": "^/principles(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/principles(?:/)?$"
+    },
+    {
+      "page": "/resources",
+      "regex": "^/resources(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/resources(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

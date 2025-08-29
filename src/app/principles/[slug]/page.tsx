@@ -308,7 +308,7 @@ export default function ModulePlayerPage({ params }: ModulePlayerPageProps) {
       </header>
 
       {/* Main Content */}
-      <div className="container mx-auto px-6 py-6">
+      <div className="container mx-auto px-6 pt-6 pb-6">
         <div className="grid gap-6 lg:grid-cols-12">
           {/* Left Rail - Lesson Navigation */}
           <aside

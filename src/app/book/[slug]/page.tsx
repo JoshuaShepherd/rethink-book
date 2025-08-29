@@ -66,7 +66,7 @@ export default async function BookPage({
           </div>
         </div>
 
-        <div className="container mx-auto max-w-4xl px-4 py-12">
+        <div className="container mx-auto max-w-4xl px-4 pt-20 pb-12">
           {/* Header Section */}
           <div className="mb-12 text-center space-y-6">
             <div className="flex flex-wrap justify-center gap-2 mb-4">

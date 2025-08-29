@@ -21,7 +21,7 @@ export default async function BookIndexPage() {
 
     return (
       <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50/20 dark:from-gray-950 dark:via-gray-900 dark:to-blue-950/20">
-        <div className="container mx-auto max-w-6xl px-4 py-12">
+        <div className="container mx-auto max-w-6xl px-4 pt-20 pb-12">
           {/* Header */}
           <div className="text-center mb-16">
             <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent mb-6">

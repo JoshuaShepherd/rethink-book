@@ -23,7 +23,7 @@ export default function PrinciplesPage() {
     <div className="min-h-screen bg-background">
       {/* Header */}
       <div className="border-b bg-muted/30">
-        <div className="container mx-auto px-6 py-12">
+        <div className="container mx-auto px-6 pt-20 pb-12">
           <div className="text-center space-y-4">
             <div className="flex items-center justify-center gap-2 mb-2">
               <Sparkles className="h-6 w-6 text-primary" />
@@ -45,7 +45,7 @@ export default function PrinciplesPage() {
       </div>
 
       {/* Principles Grid */}
-      <div className="container mx-auto px-6 py-12">
+      <div className="container mx-auto px-6 pt-8 pb-12">
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {mockPrinciples.map(principle => {
             const badge = mockBadges.find(b => b.id === principle.badgeId);
