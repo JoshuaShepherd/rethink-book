@@ -12,6 +12,7 @@ import Link from 'next/link';
 const navigationItems = [
   { name: 'About', href: '/about' },
   { name: 'Book', href: '/book' },
+  { name: 'Course', href: '/course' },
   { name: 'Principles', href: '/principles' },
   { name: 'Blog', href: '/blog' },
   { name: 'Resources', href: '/resources' },
